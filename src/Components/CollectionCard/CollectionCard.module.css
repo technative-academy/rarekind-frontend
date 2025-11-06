@@ -1,0 +1,15 @@
+@import "src/global.css";
+
+.card {
+  border: 2px solid var(--color-background-feature);
+  border-radius: var(--border-radius-s);
+  max-width: 400px;
+  height: 225px;
+  background-color: var(--color-background-feature);
+  margin: 2em;
+}
+
+h3,
+p {
+  margin: 0;
+}
