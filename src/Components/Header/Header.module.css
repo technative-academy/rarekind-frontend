@@ -20,7 +20,8 @@
 .userButtons {
   position: absolute;
   right: 0;
-  margin: 20px;
+  margin: 45px 20px;
+  
 }
 
 .userButton {
@@ -35,7 +36,7 @@
   padding: 10px;
 }
 
-button:hover {
+.userButton:hover {
   color: var(--color-primary);
 }
 
@@ -47,7 +48,7 @@ button:hover {
   }
 
   .logo {
-    height: 100px;
+    height: 120px;
   }
 }
 
