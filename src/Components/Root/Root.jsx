@@ -3,7 +3,6 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import MainContent from "../MainContent/MainContent";
 
-
 function Root() {
   return (
       <div className={styles.wrapper}>
