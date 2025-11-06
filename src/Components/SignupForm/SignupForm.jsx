@@ -13,7 +13,7 @@ function SignupForm() {
                         type="text"
                         name="name"
                         placeholder="Enter name..."
-                        className={styles.emailInput}
+                        className={styles.nameInput}
                     />
                 </label>
                 <label className={styles.label}>
@@ -35,7 +35,7 @@ function SignupForm() {
                     />
                 </label>
                 <button type="submit" className={styles.button}>
-                    LOG IN
+                    SIGN UP
                 </button>
             </form>
         </div>
