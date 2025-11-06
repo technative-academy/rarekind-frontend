@@ -1,52 +1,39 @@
-
-
 .wrapper {
-  background-color: var(--color-background-black);
-  width: 100%;
-  min-height: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+    background-color: var(--color-background-black);
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .logo {
-  height: 70px;
-  position: relative;
-  left: 3px;
+    height: 70px;
+    position: relative;
+    left: 3px;
 }
 
 .userButtons {
-  position: absolute;
-  right: 5px;
-  top: 30px;
-  
+    padding: 30px 10px 10px 20px;
+    
 }
 
 .userButton {
-  color: var(--color-text-light-gray);
-  background-color: transparent;
-  border: none;
-  font-family: "lato", sans-serif;
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-body);
-  cursor: pointer;
-  text-decoration: none;
-  padding: 5px;
+    color: var(--color-text-light-gray);
+    background-color: transparent;
+    border: none;
+    font-family: 'lato', sans-serif;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-body);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
 }
 
 .userButton:hover {
-  color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 @media (min-width: 768px) {
-  .wrapper {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  
 }
-
-

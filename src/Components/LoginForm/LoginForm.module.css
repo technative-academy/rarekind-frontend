@@ -1,7 +1,7 @@
 .wrapper {
     background-color: var(--color-background-feature);
     width: 80%;
-    max-width: 350px;
+    max-width: 400px;
     min-width: 300px;
     display: flex;
     flex-direction: column;
