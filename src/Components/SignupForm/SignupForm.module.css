@@ -1,0 +1,67 @@
+.wrapper {
+    background-color: var(--color-background-feature);
+    width: 80%;
+    max-width: 400px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 20px 40px 40px 40px; 
+}
+
+.close {
+    margin-left: 100%;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--color-text-light-gray);
+}
+
+.close:hover {
+    color: var(--color-primary);
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.emailInput {
+    color: var(--color-text-light-gray);
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    background: var(--color-background-black);
+    border: 1px solid var(--color-text-mid-gray);
+    border-radius: 4px;
+    margin: 10px auto;
+}
+
+.passwordInput {
+    color: var(--color-text-light-gray);
+    width: 100%;
+    padding:  16px 8px 16px;
+    font-size: 1rem;
+    background: var(--color-background-black);
+    border: 1px solid var(--color-text-mid-gray);
+    border-radius: 4px;
+    margin: 10px auto;
+}
+
+.button {
+    background: var(--color-text-mid-gray);
+    color: var(--color-text-light-gray);
+    padding: 8px;
+    border: 1px solid var(--color-background-feature);
+    border-radius: 4px;
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-body);
+    margin-bottom: 20px;
+}
