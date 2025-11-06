@@ -1,0 +1,24 @@
+.inactiveLink {
+  color: var(--color-text-light-gray);
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-family: "lato", sans-serif;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: var(--font-size-body);
+}
+.inactiveLink:hover {
+  color: var(--color-primary);
+}
+
+.activeLink {
+  color: var(--color-primary);
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-family: "lato", sans-serif;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+}

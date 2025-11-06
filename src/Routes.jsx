@@ -1,5 +1,5 @@
 import Root from "./Components/Root/Root";
-import Dashboard from "./Pages/DashboardPage/DashBoardPage";
+import Dashboard from "./Pages/DashboardPage/DashboardPage";
 import Login from "./Pages/LoginPage/LoginPage";
 import Signup from "./Pages/SignupPage/SignupPage"; 
 import Users from "./Pages/UsersPage/UsersPage";

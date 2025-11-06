@@ -4,8 +4,6 @@ import styles from "./SiteNav.module.css";
 function SiteNav() {
   const navLinks = [
     { label: "Dashboard", url: "/" },
-    { label: "Login", url: "/login" },
-    { label: "Signup", url: "/signup" },
     { label: "Users", url: "/users" },
     { label: "All collections", url: "/allcollections" },
     { label: "My collections", url: "/mycollections" },
