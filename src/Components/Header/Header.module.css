@@ -11,16 +11,15 @@
 }
 
 .logo {
-  height: 120px;
+  height: 70px;
   position: relative;
-  left: -15px;
-  top: -5px;
+  left: 3px;
 }
 
 .userButtons {
   position: absolute;
-  right: 0;
-  margin: 45px 20px;
+  right: 5px;
+  top: 30px;
   
 }
 
@@ -33,7 +32,7 @@
   font-size: var(--font-size-body);
   cursor: pointer;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
 }
 
 .userButton:hover {
@@ -47,9 +46,7 @@
     justify-content: flex-start;
   }
 
-  .logo {
-    height: 120px;
-  }
+  
 }
 
 

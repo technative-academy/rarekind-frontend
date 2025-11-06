@@ -1,3 +1,7 @@
+.links {
+    padding-top: 10px;
+}
+
 .inactiveLink {
   color: var(--color-text-light-gray);
   background-color: transparent;
