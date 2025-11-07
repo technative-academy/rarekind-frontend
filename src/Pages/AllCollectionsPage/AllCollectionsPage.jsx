@@ -19,4 +19,4 @@ function AllCollectionsPage() {
   );
 }
 
-export default AllCollectionsPage;
+export default AllCollectionsPage

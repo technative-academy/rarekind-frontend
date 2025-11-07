@@ -3,30 +3,39 @@
 .wrapper {
   background-color: var(--color-background-dark);
   border-radius: var(--border-radius-s);
-  margin: 2em auto;
   padding: 1em;
-  display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin: 3em 2em;
+}
+
+.cardContainer {
+    background-color: #25262c;
+    border-radius: var(--border-radius-s);
+    margin: 2em 1em;
+    padding: 1em;
+    display: inline-block;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 15px;
-  justify-items: center;
-  margin: 1.5em 0 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin: 1.5em 0 0;
 }
 @media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .wrapper {
-    margin: 2em;
-    padding: 2em;
-  }
-  @media (min-width: 1200px) {
     .grid {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
     }
-  }
+    .cardContainer {
+        margin: 2em;
+        padding: 2em;
+    }
+    @media (min-width: 1200px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+    }
 }
