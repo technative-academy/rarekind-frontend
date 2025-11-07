@@ -14,9 +14,7 @@ function Header() {
         className={styles.logo}
       />
 
-      <div>
-        <SiteNav />
-      </div>
+      
       <div className={styles.userButtons}>
         <Link to="/signup" className={styles.userButton}>
           Sign up

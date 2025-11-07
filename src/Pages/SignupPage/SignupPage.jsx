@@ -1,9 +1,10 @@
 import styles from './SignupPage.module.css';
+import SignupForm from '../../Components/SignupForm/SignupForm';
 
 function SignupPage() {
   return (
-    <div className={styles.wrapper}>
-      <p>Sign up</p>
+    <div className={styles.backdrop}>
+      <SignupForm />
     </div>
   );
 }
