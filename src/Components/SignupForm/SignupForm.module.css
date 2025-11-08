@@ -28,7 +28,7 @@
 }
 
 h2 {
-    margin-top: 5px;
+    margin: 5px;
 }
 
 .form {
@@ -78,4 +78,9 @@ h2 {
     font-weight: var(--font-weight-bold);
     font-family: var(--font-family-body);
     margin-bottom: 20px;
+}
+
+.button:hover {
+    background: var(--color-primary);
+    color: var(--color-background-black);
 }

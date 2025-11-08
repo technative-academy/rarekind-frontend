@@ -49,6 +49,10 @@
   margin: 0 10px;
 }
 
+.newCollectionButton:hover {
+  transform: scale(1.05);
+}
+
 @media (min-width: 768px) {
   .wrapper {
     flex-direction: row;

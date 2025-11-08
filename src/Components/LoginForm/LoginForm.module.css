@@ -28,7 +28,7 @@
 }
 
 h2 {
-    margin-top: 5px;
+    margin: 5px;
 }
 
 .form {
@@ -69,3 +69,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+.button:hover {
+    background: var(--color-primary);
+    color: var(--color-background-black);
+}

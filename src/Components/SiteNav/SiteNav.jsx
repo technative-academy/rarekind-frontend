@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
 import styles from "./SiteNav.module.css";
+import { useDispatch } from "react-redux";
+import { openPopup } from "../PopUp/popupSlice";
 
 function SiteNav() {
+  const dispatch = useDispatch();
   const navLinks = [
     { label: "Dashboard", url: "/" },
     { label: "Users", url: "/users" },
@@ -10,6 +13,7 @@ function SiteNav() {
     { label: "One of my collections", url: "/oneofmycollections" },
   ];
   return (
+    
     <div className={styles.wrapper}>
       <nav className={styles.links}>
         {navLinks.map((navLink) => (
@@ -24,7 +28,7 @@ function SiteNav() {
           </NavLink>
         ))}
       </nav>
-      <button className={styles.newCollectionButton}>+ NEW COLLECTION</button>
+      <button className={styles.newCollectionButton} onClick={() => dispatch(openPopup('newcollection'))}>+ NEW COLLECTION</button>
     </div>
   );
 }

@@ -36,5 +36,7 @@
 }
 
 @media (min-width: 768px) {
-
+    .logo {
+        height: 100px;
+    }
 }
