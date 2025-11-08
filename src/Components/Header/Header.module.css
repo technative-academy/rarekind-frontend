@@ -15,7 +15,7 @@
 }
 
 .userButtons {
-    padding: 30px 10px 10px 20px;
+    padding: 20px 5px 10px 5px;
     
 }
 
@@ -38,5 +38,9 @@
 @media (min-width: 768px) {
     .logo {
         height: 100px;
+    }
+
+    .userButtons {
+        margin-top: 20px;
     }
 }
