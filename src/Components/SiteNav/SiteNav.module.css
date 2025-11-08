@@ -46,7 +46,7 @@
   font-weight: var( --font-weight-bold);
   color: var(--color-background-black);
   cursor: pointer;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 @media (min-width: 768px) {
@@ -59,7 +59,6 @@
   }
   .newCollectionButton {
     width: auto;
-    margin: 0;
     min-width: 200px;
   }
 }
