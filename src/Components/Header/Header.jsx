@@ -1,11 +1,9 @@
 import styles from './Header.module.css'
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { openPopup } from '../PopUp/popupSlice'
 
 function Header() {
-    const location = useLocation()
     const dispatch = useDispatch()
 
     return (
@@ -17,9 +15,8 @@ function Header() {
             />
 
             <div className={styles.userButtons}>
-                <Link to="/signup" className={styles.userButton}>
-                    Sign up
-                </Link>
+                <button className={styles.userButton}
+                onClick={() => dispatch(openPopup('signup'))}>Sign up</button>
                 <button
                     className={styles.userButton}
                     onClick={() => dispatch(openPopup('login'))}
