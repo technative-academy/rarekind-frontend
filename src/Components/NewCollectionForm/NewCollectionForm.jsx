@@ -35,22 +35,21 @@ function NewCollectionForm() {
                     />
                 </label>
                 <label className={styles.label}>
-                    Tags
-                    <input
-                        type="text"
-                        name="tags"
-                        placeholder="Add tags..."
-                        className={styles.tags}
-                    />
-                </label>
-
-                <label className={styles.label}>
                     Species
                     <input
                         type="text"
                         name="species"
                         placeholder="Enter species..."
                         className={styles.species}
+                    />
+                </label>
+                <label className={styles.label}>
+                    Tags
+                    <input
+                        type="text"
+                        name="tags"
+                        placeholder="Add tags..."
+                        className={styles.tags}
                     />
                 </label>
                 <button type="submit" className={styles.button}>
