@@ -13,20 +13,25 @@ function Header() {
                 alt="RareKind Logo"
                 className={styles.logo}
             />
-
-            <div className={styles.userButtons}>
-                <button
-                    className={styles.userButton}
-                    onClick={() => dispatch(openPopup('signup'))}
-                >
-                    Sign up
-                </button>
-                <button
-                    className={styles.userButton}
-                    onClick={() => dispatch(openPopup('login'))}
-                >
-                    Log in
-                </button>
+            <div className={styles.uiSection}>
+                <label className={styles.switch}>
+                    <input type="checkbox" />
+                    <span className={styles.slider}></span>
+                </label>
+                <div className={styles.userButtons}>
+                    <button
+                        className={styles.userButton}
+                        onClick={() => dispatch(openPopup('signup'))}
+                    >
+                        Sign up
+                    </button>
+                    <button
+                        className={styles.userButton}
+                        onClick={() => dispatch(openPopup('login'))}
+                    >
+                        Log in
+                    </button>
+                </div>
             </div>
         </div>
     )

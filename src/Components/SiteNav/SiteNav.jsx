@@ -3,7 +3,6 @@ import styles from './SiteNav.module.css'
 import { useDispatch } from 'react-redux'
 import { openPopup } from '../PopUp/popupSlice'
 
-
 function SiteNav() {
     const dispatch = useDispatch()
     const location = useLocation()
@@ -30,6 +29,7 @@ function SiteNav() {
                     </NavLink>
                 ))}
             </nav>
+
             {location.pathname === '/allcollections' && (
                 <button
                     className={styles.newCollectionButton}
