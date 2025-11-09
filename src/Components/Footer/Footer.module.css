@@ -41,7 +41,9 @@
 }
 
 p {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
     font-size: var(--font-size-small);
     color: var(--color-text-mid-gray);
 }
@@ -60,5 +62,9 @@ p {
 
     .footerSubLink {
         margin: 10px 0;
+    }
+
+    p {
+        padding-left: 5px;
     }
 }
