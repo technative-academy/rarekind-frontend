@@ -1,30 +1,31 @@
-import styles from "./Header.module.css";
-import React from "react";
-import SiteNav from "../SiteNav/SiteNav";
-import { Link, useLocation } from "react-router-dom";
+import styles from './Header.module.css'
+import React from 'react'
+import { useDispatch } from 'react-redux'
+import { openPopup } from '../PopUp/popupSlice'
 
 function Header() {
-  const location = useLocation();
+    const dispatch = useDispatch()
 
-  return (
-    <div className={styles.wrapper}>
-      <img
-        src="/images/rarekindlogo.png"
-        alt="RareKind Logo"
-        className={styles.logo}
-      />
+    return (
+        <div className={styles.wrapper}>
+            <img
+                src="/images/rarekindlogo.png"
+                alt="RareKind Logo"
+                className={styles.logo}
+            />
 
-      
-      <div className={styles.userButtons}>
-        <Link to="/signup" className={styles.userButton}>
-          Sign up
-        </Link>
-        <Link to="/login" className={styles.userButton}>
-          Log in
-        </Link>
-      </div>
-    </div>
-  );
+            <div className={styles.userButtons}>
+                <button className={styles.userButton}
+                onClick={() => dispatch(openPopup('signup'))}>Sign up</button>
+                <button
+                    className={styles.userButton}
+                    onClick={() => dispatch(openPopup('login'))}
+                >
+                    Log in
+                </button>
+            </div>
+        </div>
+    )
 }
 
-export default Header;
+export default Header

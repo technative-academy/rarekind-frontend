@@ -18,6 +18,9 @@
     font-size: 2rem;
     text-decoration: none;
     color: var(--color-text-light-gray);
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .close:hover {

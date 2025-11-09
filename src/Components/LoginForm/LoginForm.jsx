@@ -1,10 +1,19 @@
 import styles from './LoginForm.module.css'
-import { Link } from 'react-router'
+import { useDispatch } from 'react-redux'
+import { closePopup } from '../PopUp/popupSlice'
 
 function LoginForm() {
+    const dispatch = useDispatch()
+
     return (
         <div className={styles.wrapper}>
-           <Link to={'..'} className={styles.close} aria-label="Close Login">X</Link>
+            <button
+                onClick={() => dispatch(closePopup())}
+                className={styles.close}
+                aria-label="Close Login"
+            >
+                X
+            </button>
             <h2>Log in</h2>
             <form className={styles.form}>
                 <label className={styles.label}>
