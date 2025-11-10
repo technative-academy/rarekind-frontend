@@ -1,7 +1,7 @@
 import styles from './AddItemForm.module.css'
 import { useDispatch } from 'react-redux'
 import { closePopup } from '../PopUp/popupSlice'
-import { GrTrash } from "react-icons/gr";
+import { FaTrashCan } from "react-icons/fa6";
 
 function AddItemForm() {
     const dispatch = useDispatch()
@@ -39,7 +39,7 @@ function AddItemForm() {
                     UPDATE ITEM
                 </button>
                 <button type="submit" className={styles.deleteButton}>
-                    <GrTrash className={styles.deleteIcon} />
+                    <FaTrashCan className={styles.deleteIcon} />
                     DELETE ITEM
                 </button>
             </form>
