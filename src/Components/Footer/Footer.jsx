@@ -8,14 +8,14 @@ function Footer() {
             <div>
                 <Link
                     to="https://github.com/technative-academy/rarekind-frontend"
-                    target='blank'
+                    target="blank"
                     className={styles.footerLink}
                 >
                     Front-end repo
                 </Link>
                 <Link
                     to="https://github.com/technative-academy/rarekind-backend"
-                    target='blank'
+                    target="blank"
                     className={styles.footerLink}
                 >
                     Back-end repo
@@ -27,7 +27,7 @@ function Footer() {
                 </button>
                 <button className={styles.footerSubLink}>Cookies</button>
             </div>
-            <p>© 2025 RareKind</p>
+            <p className={styles.copyright}>© 2025 RareKind</p>
         </div>
     )
 }
