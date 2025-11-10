@@ -1,18 +1,46 @@
 .wrapper {
     display: flex;
     justify-content: left;
-    margin: 3em 2em;
+    margin: 1.5em 5em 3em;
+    padding: 1em;
 }
 
 .collectionContainer {
-    margin: 2em 0em;
     padding: 1em 0;
 }
 
-.descriptionContainer {
-    max-width: 600px;
+/* Text Styling */
+.title {
+    color: var(--color-text-dark-gray);
 }
 
+.pageTitle,
+.description {
+    color: var(--color-text-light-gray);
+}
+
+/* Collection Details Containers */
+
+.additionalContainer,
+.statusContainer,
+.descriptionContainer,
+.tagsContainer {
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.descriptionContainer,
+.tagsContainer {
+    background-color: #25262c;
+    border-radius: var(--border-radius-s);
+}
+
+.descriptionContainer,
+.additionalContainer {
+    max-width: 800px;
+}
+
+/* Tags */
 .tagsContainer {
     max-width: 400px;
 }
@@ -34,19 +62,7 @@
     justify-content: space-around;
 }
 
-.additionalContainer,
-.statusContainer {
-    margin: 1em 0;
-    padding: 1em 1.5em;
-}
-
-.descriptionContainer,
-.tagsContainer {
-    background-color: #25262c;
-    border-radius: var(--border-radius-s);
-    margin: 1em 0;
-    padding: 1em 1.5em;
-}
+/* Status Section */
 
 .statusTitle {
     color: var(--color-text-dark-gray);
@@ -55,4 +71,42 @@
 .statusDetails {
     font-size: var(--font-size-small);
     padding: 1em 0 0;
+}
+
+/* Buttons */
+
+.editCollectionButton {
+    padding: 0.8em 1em;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--border-radius-s);
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-background-black);
+    cursor: pointer;
+    margin: 0 0.5em;
+    font-size: var(--font-size-body);
+}
+
+.editCollectionButton:hover,
+.deleteCollectionButton:hover {
+    transform: scale(1.05);
+}
+
+.deleteCollectionButton {
+    border: none;
+    background-color: transparent;
+    padding: 0.8em 1em;
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    color: var(--color-text-red);
+    margin: 0 0.5em;
+    font-size: var(--font-size-body);
+}
+
+/* Icons */
+
+.icon {
+    margin: 0 0.8em;
 }
