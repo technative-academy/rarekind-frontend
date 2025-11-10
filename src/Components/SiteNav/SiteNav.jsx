@@ -29,8 +29,7 @@ function SiteNav() {
                     </NavLink>
                 ))}
             </nav>
-
-            {location.pathname === '/allcollections' && (
+            {(location.pathname === '/allcollections' || location.pathname === '/mycollections') && (
                 <button
                     className={styles.newCollectionButton}
                     onClick={() => dispatch(openPopup('newcollection'))}
