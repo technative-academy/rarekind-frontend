@@ -1,6 +1,7 @@
 import styles from './AddItemForm.module.css'
 import { useDispatch } from 'react-redux'
 import { closePopup } from '../PopUp/popupSlice'
+import { GrTrash } from "react-icons/gr";
 
 function AddItemForm() {
     const dispatch = useDispatch()
@@ -10,32 +11,36 @@ function AddItemForm() {
             <button
                 onClick={() => dispatch(closePopup())}
                 className={styles.close}
-                aria-label="Close Login"
+                aria-label="Close add item"
             >
                 X
             </button>
-            <h2>Log in</h2>
+            <h2>Item detail</h2>
             <form className={styles.form}>
                 <label className={styles.label}>
-                    Email
+                    Description
                     <input
                         type="text"
-                        name="username"
-                        placeholder="Enter email..."
-                        className={styles.emailInput}
+                        name="description"
+                        placeholder="Enter item description..."
+                        className={styles.description}
                     />
                 </label>
                 <label className={styles.label}>
-                    Password
+                    Additional notes
                     <input
-                        type="password"
-                        name="password"
-                        placeholder="Enter password..."
-                        className={styles.passwordInput}
+                        type="text"
+                        name="notes"
+                        placeholder="Enter additional notes..."
+                        className={styles.notes}
                     />
                 </label>
                 <button type="submit" className={styles.button}>
-                    LOG IN
+                    UPDATE ITEM
+                </button>
+                <button type="submit" className={styles.deleteButton}>
+                    <GrTrash className={styles.deleteIcon} />
+                    DELETE ITEM
                 </button>
             </form>
         </div>
