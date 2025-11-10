@@ -12,7 +12,7 @@
     border: none;
     padding: 5px;
     margin: 5px;
-    font-family: "lato", sans-serif;
+    font-family: 'lato', sans-serif;
     font-weight: var(--font-weight-bold);
     cursor: pointer;
     text-decoration: none;
@@ -29,8 +29,9 @@
     border: none;
     padding: 5px;
     margin: 5px;
-    font-family: "lato", sans-serif;
+    font-family: 'lato', sans-serif;
     font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-small);
     cursor: pointer;
     text-decoration: none;
     font-size: var(--font-size-small);
@@ -44,7 +45,6 @@ p {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    font-size: var(--font-size-small);
     color: var(--color-text-mid-gray);
 }
 
