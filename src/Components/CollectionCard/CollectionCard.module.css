@@ -1,38 +1,38 @@
 .card {
-  border: 2px solid var(--color-background-feature);
-  border-radius: var(--border-radius-s);
-  width: 320px;
-  height: 200px;
-  background-color: var(--color-background-feature);
-  padding: 1.5em;
+    border: 2px solid var(--color-background-feature);
+    border-radius: var(--border-radius-s);
+    width: 320px;
+    height: 200px;
+    background-color: var(--color-background-feature);
+    padding: 1.5em;
 }
 
 .cardHeader {
-  padding: 0 0 0.5em;
-  font-weight: 400;
+    padding: 0 0 0.5em;
+    font-weight: 400;
 }
 
 .cardTag {
-  font-size: var(--font-size-small);
-  color: var(--color-text-light-gray);
-  margin: 0.2em 0 0.5em;
-  padding: 0.5em;
-  border-radius: var(--border-radius-xs);
-  background-color: var(--color-text-dark-gray);
-  display: inline-block;
+    font-size: var(--font-size-small);
+    color: var(--color-text-light-gray);
+    margin: 0.2em 0 0.5em;
+    padding: 0.5em;
+    border-radius: var(--border-radius-xs);
+    background-color: var(--color-text-dark-gray);
+    display: inline-block;
 }
 
 .cardDetails {
-  font-size: var(--font-size-small);
-  padding: 1em 0 0;
+    font-size: var(--font-size-small);
+    padding: 1em 0 0;
 }
 
 .cardStatusTitle {
-  color: var(--color-text-dark-gray);
+    color: var(--color-text-dark-gray);
 }
 
 @media (min-width: 768px) {
-  .card {
-    width: 380px;
-  }
+    .card {
+        width: 360px;
+    }
 }

@@ -1,0 +1,133 @@
+.collectionContainer {
+    padding: 1em 0;
+}
+
+/* Text Styling */
+.title {
+    color: var(--color-text-dark-gray);
+}
+
+.pageTitle,
+.description {
+    color: var(--color-text-light-gray);
+}
+
+.descriptionText {
+    font-size: 1.1rem;
+}
+
+.descriptionText,
+.additionalText,
+.tagList {
+    margin: 0.5em 0 0;
+}
+
+/* Collection Details Containers */
+
+.additionalContainer,
+.descriptionContainer,
+.tagsContainer {
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.statusContainer {
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+}
+
+.descriptionContainer,
+.tagsContainer {
+    background-color: var(--color-background-dark);
+    border-radius: var(--border-radius-s);
+}
+
+.descriptionContainer,
+.additionalContainer {
+    max-width: 800px;
+}
+
+/* Tags */
+.tagsContainer {
+    max-width: 400px;
+}
+
+.tagList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tag {
+    font-size: var(--font-size-small);
+    color: var(--color-text-light-gray);
+    margin: 1em 1em 1em 0;
+    padding: 0.5em;
+    border-radius: var(--border-radius-xs);
+    background-color: var(--color-text-dark-gray);
+    display: inline-block;
+    justify-content: space-around;
+}
+
+/* Status Section */
+
+.statusTitle {
+    color: var(--color-text-dark-gray);
+}
+
+.statusDetails {
+    font-size: var(--font-size-small);
+    padding: 1em 0 0;
+}
+
+/* Buttons */
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+    margin: 1.5em 0;
+}
+
+.editCollectionButton {
+    padding: 0.8em 1em;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--border-radius-s);
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-background-black);
+    cursor: pointer;
+    margin: 0 0.5em;
+    font-size: var(--font-size-body);
+}
+
+.editCollectionButton:hover,
+.deleteCollectionButton:hover {
+    transform: scale(1.05);
+}
+
+.deleteCollectionButton {
+    border: none;
+    background-color: transparent;
+    padding: 0.8em 1em;
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    color: var(--color-text-red);
+    margin: 0 0.5em;
+    font-size: var(--font-size-body);
+}
+
+/* Icons */
+
+.icon {
+    margin: 0 0.8em;
+}
+
+@media (min-width: 768px) {
+    .buttonContainer {
+        flex-direction: row;
+    }
+}
