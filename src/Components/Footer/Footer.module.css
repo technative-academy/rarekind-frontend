@@ -2,7 +2,8 @@
     width: 100%;
     min-height: 150px;
     border-top: 1px solid var(--color-text-dark-gray);
-    padding: 20px;
+    padding: 5px;
+    padding-top: 10px;
 }
 
 .footerLink {
@@ -40,7 +41,9 @@
 }
 
 p {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
     font-size: var(--font-size-small);
     color: var(--color-text-mid-gray);
 }
@@ -48,5 +51,20 @@ p {
 @media (min-width: 768px) {
     .wrapper {
         border: none;
+        padding: 0;
+        padding-bottom: 20px;
+        min-height: 80px;
+    }
+
+    .footerLink {
+        margin: 10px 0;
+    }
+
+    .footerSubLink {
+        margin: 10px 0;
+    }
+
+    p {
+        padding-left: 5px;
     }
 }

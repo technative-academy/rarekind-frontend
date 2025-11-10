@@ -3,16 +3,15 @@ import styles from './SiteNav.module.css'
 import { useDispatch } from 'react-redux'
 import { openPopup } from '../PopUp/popupSlice'
 
-
 function SiteNav() {
     const dispatch = useDispatch()
     const location = useLocation()
 
     const navLinks = [
-        { label: 'Dashboard', url: '/' },
-        { label: 'Users', url: '/users' },
+        // { label: 'Dashboard', url: '/' },
         { label: 'All collections', url: '/allcollections' },
         { label: 'My collections', url: '/mycollections' },
+        { label: 'Users', url: '/users' },
         { label: 'One of my collections', url: '/oneofmycollections' },
     ]
     return (

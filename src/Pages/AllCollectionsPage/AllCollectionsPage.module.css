@@ -1,9 +1,9 @@
 
 
 .wrapper {
-  background-color: #25262c;
+  background-color: var(--color-background-dark);
   border-radius: var(--border-radius-s);
-  margin: 2em 1em;
+  margin: 2em auto;
   padding: 1em;
   display: inline-block;
 }

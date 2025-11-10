@@ -1,5 +1,5 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  margin: 3em 2em;
+  margin: 3em auto;
 }
