@@ -7,10 +7,14 @@
 }
 
 .footerLink {
+    display: inline-block;
     color: var(--color-primary);
     background-color: transparent;
     border: none;
     padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-family: "lato", sans-serif;
     margin: 5px;
     font-family: 'lato', sans-serif;
     font-weight: var(--font-weight-bold);
@@ -24,10 +28,14 @@
 }
 
 .footerSubLink {
+    display: inline-block;
     color: var(--color-text-light-gray);
     background-color: transparent;
     border: none;
     padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-family: "lato", sans-serif;
     margin: 5px;
     font-family: 'lato', sans-serif;
     font-weight: var(--font-weight-bold);

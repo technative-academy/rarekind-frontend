@@ -1,9 +1,10 @@
-import React from 'react'
+
 import styles from './Popup.module.css'
 import { useSelector } from 'react-redux'
 import LoginForm from '../LoginForm/LoginForm.jsx'
 import SignupForm from '../SignupForm/SignupForm.jsx'
 import NewCollectionForm from '../NewCollectionForm/NewCollectionForm.jsx'
+import AddItemForm from '../AddItemForm/AddItemForm.jsx'
 
 function PopupRoot() {
     const selectedPopup = useSelector((state) => state.popup.selectedPopup)
@@ -28,6 +29,13 @@ function PopupRoot() {
         return (
             <div className={styles.backdrop}>
                 <NewCollectionForm />
+            </div>
+        )
+    }
+    if (selectedPopup === 'additem') {
+        return (
+            <div className={styles.backdrop}>
+                <AddItemForm />
             </div>
         )
     }

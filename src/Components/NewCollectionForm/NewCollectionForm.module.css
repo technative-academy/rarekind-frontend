@@ -34,6 +34,7 @@ h2 {
 .form {
     display: flex;
     flex-direction: column;
+    
 }
 
 .title {
@@ -93,6 +94,7 @@ h2 {
     font-weight: var(--font-weight-bold);
     font-family: var(--font-family-body);
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .button:hover {
