@@ -37,6 +37,7 @@ h2 {
 }
 
 .title {
+    font-family: var(--font-family-body);
     color: var(--color-text-light-gray);
     width: 100%;
     padding: 8px;
@@ -48,6 +49,7 @@ h2 {
 }
 
 .description {
+    font-family: var(--font-family-body);
     color: var(--color-text-light-gray);
     width: 100%;
     padding:  16px 8px 16px;
@@ -59,6 +61,7 @@ h2 {
 }
 
 .tags {
+    font-family: var(--font-family-body);
     color: var(--color-text-light-gray);
     width: 100%;
     padding:  16px 8px 16px;
@@ -70,6 +73,7 @@ h2 {
 }
 
 .species {
+    font-family: var(--font-family-body);
     color: var(--color-text-light-gray);
     width: 100%;
     padding:  16px 8px 16px;
