@@ -8,6 +8,50 @@
     margin: 0 0 3em;
 }
 
+.noItemsContainer {
+    text-align: center;
+}
+
+/* Text */
+.textBold {
+    font-weight: var(--font-weight-bold);
+    font-size: 1.25rem;
+    color: var(--color-text-dark-gray);
+}
+
+.textLight {
+    color: var(--color-text-mid-gray);
+}
+
+/* Icons */
+
+.inboxIcon {
+    font-size: 6rem;
+    color: var(--color-text-dark-gray);
+    margin: 0.2em 0;
+}
+
+.addIcon {
+    margin: 0 0.5em;
+}
+
+.addItemButton {
+    padding: 0.8em 1em;
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--border-radius-s);
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    cursor: pointer;
+    margin: 1em 0.5em;
+    font-size: var(--font-size-body);
+}
+
+.addItemButton:hover {
+    transform: scale(1.05);
+}
+
 @media (min-width: 576px) {
     .wrapper {
         margin: 1.5em 6em 3em;
