@@ -22,10 +22,10 @@ function Footer() {
                 </Link>
             </div>
             <div>
-                <button className={styles.footerSubLink}>
+                <a className={styles.footerSubLink}>
                     Terms and Conditions
-                </button>
-                <button className={styles.footerSubLink}>Cookies</button>
+                </a>
+                <a className={styles.footerSubLink}>Cookies</a>
             </div>
             <p>© 2025 RareKind</p>
         </div>
