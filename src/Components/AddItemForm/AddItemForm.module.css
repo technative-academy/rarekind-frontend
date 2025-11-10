@@ -74,6 +74,7 @@ h2 {
     font-weight: var(--font-weight-bold);
     font-family: var(--font-family-body);
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -94,6 +95,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .deleteButton:hover {

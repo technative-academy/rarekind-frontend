@@ -67,6 +67,7 @@ h2 {
     font-weight: var(--font-weight-bold);
     font-family: var(--font-family-body);
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .button:hover {
