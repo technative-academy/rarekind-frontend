@@ -85,7 +85,7 @@ h2 {
     width: 130px;
     background: transparent;
     color: var(--color-text-red);
-    padding: 8px;
+    padding: 4px;
     border: none;
     border-radius: 4px;
     font-weight: var(--font-weight-bold);
