@@ -1,16 +1,35 @@
-# React + Vite
+# RareKind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+The RareKind frontend is a React application that allows users to browse collections and items,and manage their personal collections. It will interacts with the RareKind backend through and uses Redux for state management and CSS Modules for styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features to implement
 
-## React Compiler
+**User Authentication**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   Login and persistent session
+-   Protected routes
 
-## Expanding the ESLint configuration
+**Collections**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   Load collections from the backend
+-   View individual collection and items
+-   Edit collections
+-   Add collections and items
+-   User-specific collection management
+
+**React and Redux Toolkit**
+
+-   Global state handling for auth and collections
+
+**CSS Modules**
+
+-   Component-scoped styling
+
+## Technologies used
+
+-   React
+-   Redux Toolkit
+-   React Router
+-   CSS Modules
