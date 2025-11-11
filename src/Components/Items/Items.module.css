@@ -1,5 +1,5 @@
 .wrapper {
-    background-color: var(--color-background-dark);
+    /* background-color: var(--color-background-dark); */
     border-radius: var(--border-radius-s);
     padding: 2em;
     display: flex;
