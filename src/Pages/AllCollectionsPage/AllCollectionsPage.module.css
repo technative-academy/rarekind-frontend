@@ -16,6 +16,13 @@
     display: inline-block;
 }
 
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -30,6 +37,10 @@
     .cardContainer {
         margin: 2em;
         padding: 2em;
+    }
+    .inputContainer {
+        flex-direction: row;
+        justify-content: space-between;
     }
     @media (min-width: 1200px) {
         .grid {

@@ -1,0 +1,38 @@
+.filter {
+    background-color: transparent;
+    border: none;
+    font-family: var(--font-family-body);
+    font-size: 1.1rem;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    color: var(--color-text-light-gray);
+    cursor: pointer;
+    width: 290px;
+}
+
+.filterWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.filterWrapper select {
+    appearance: none;
+    padding: 0 1em 0 0;
+}
+
+.filterWrapper::after {
+    content: '▾';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .filter {
+        margin: 0;
+        width: 200px;
+    }
+}
