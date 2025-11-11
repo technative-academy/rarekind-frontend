@@ -12,7 +12,7 @@ function OneOfMyCollectionsPage() {
             </section>
 
             <section className={styles.itemContainer}>
-                <Items />
+                {/* <Items /> */}
                 <div className={styles.grid}>
                     <ItemCard />
                     <ItemCard />
