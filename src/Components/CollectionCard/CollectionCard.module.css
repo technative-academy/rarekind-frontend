@@ -1,7 +1,7 @@
 .card {
     border: 2px solid var(--color-background-feature);
     border-radius: var(--border-radius-s);
-    width: 320px;
+    width: 100%;
     height: 200px;
     background-color: var(--color-background-feature);
     padding: 1.5em;
@@ -29,10 +29,4 @@
 
 .cardStatusTitle {
     color: var(--color-text-dark-gray);
-}
-
-@media (min-width: 768px) {
-    .card {
-        width: 360px;
-    }
 }

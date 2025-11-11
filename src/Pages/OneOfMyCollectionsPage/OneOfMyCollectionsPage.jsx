@@ -1,7 +1,8 @@
 import styles from './OneOfMyCollectionsPage.module.css'
 import CollectionDetails from '../../Components/CollectionDetails/CollectionDetails'
+import ItemCard from '../../Components/ItemCard/ItemCard'
 
-import Items from '../../Components/Items/Items'
+import AddItems from '../../Components/Items/AddItems'
 
 function OneOfMyCollectionsPage() {
     return (
@@ -9,7 +10,18 @@ function OneOfMyCollectionsPage() {
             <section className={styles.wrapper}>
                 <CollectionDetails />
             </section>
-            <Items />
+
+            <section className={styles.itemContainer}>
+                {/* <AddItems /> */}
+                <div className={styles.grid}>
+                    <ItemCard />
+                    <ItemCard />
+                    <ItemCard />
+                    <ItemCard />
+                    <ItemCard />
+                    <ItemCard />
+                </div>
+            </section>
         </>
     )
 }
