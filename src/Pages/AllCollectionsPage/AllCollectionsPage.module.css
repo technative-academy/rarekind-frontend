@@ -6,14 +6,7 @@
     justify-content: center;
     flex-direction: column;
     margin: 1.5em auto 3em;
-}
-
-.cardContainer {
-    background-color: #25262c;
-    border-radius: var(--border-radius-s);
-    margin: 2em 1em;
-    padding: 1em;
-    display: inline-block;
+    width: 100%;
 }
 
 .inputContainer {
@@ -30,14 +23,11 @@
     justify-items: center;
     margin: 1.5em 0 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 886px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .cardContainer {
-        margin: 2em;
-        padding: 2em;
-    }
+
     .inputContainer {
         flex-direction: row;
         justify-content: space-between;
@@ -47,5 +37,11 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
+    }
+}
+@media (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
     }
 }

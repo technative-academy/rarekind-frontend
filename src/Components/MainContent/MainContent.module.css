@@ -1,5 +1,11 @@
 .wrapper {
     display: flex;
-    margin: 3em auto;
+    margin: 3em 1em;
     flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        margin: 3em;
+    }
 }

@@ -7,8 +7,40 @@
     padding: 0 1em;
 }
 
+.itemContainer {
+    background-color: var(--color-background-dark);
+    border-radius: var(--border-radius-s);
+    padding: 2em;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 1.5em auto 3em;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin: 1.5em 0 0;
+}
+
 @media (min-width: 576px) {
-    .wrapper {
-        margin: 1.5em 5em 3em;
+    .itemContainer {
+        margin: 1.5em auto 3em;
+    }
+}
+
+@media (min-width: 886px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
     }
 }
