@@ -1,39 +1,40 @@
 .searchContainer {
-  border-bottom: 2px solid var(--color-text-mid-gray);
-  max-width: 500px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1em 0.5em;
+    border-bottom: 2px solid var(--color-text-mid-gray);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0.5em;
 }
 
 .searchInput {
-  padding: 1em;
-  font-size: 1.1rem;
-  background-color: transparent;
-  color: var(--color-text-light-gray);
-  border: none;
-  width: 100%;
-  font-family: var(--font-family-body);
+    padding: 1em;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: var(--color-text-light-gray);
+    border: none;
+    width: 100%;
+    font-family: var(--font-family-body);
 }
 
 .searchInput:focus,
 .searchInput:active {
-  outline: 2px solid var(--color-primary);
-  background-color: transparent;
+    outline: 2px solid var(--color-primary);
+    background-color: transparent;
 }
 
 .searchButton {
-  font-size: 1.25rem;
-  font-weight: var(--font-weight-bold);
-  background-color: transparent;
-  border: none;
-  color: var(--color-text-light-gray);
-  cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    background-color: transparent;
+    border: none;
+    color: var(--color-text-light-gray);
+    cursor: pointer;
 }
 
 .searchButton:hover,
 .searchButton:active,
 .searchButton:focus {
-  color: var(--color-primary);
+    color: var(--color-primary);
 }
