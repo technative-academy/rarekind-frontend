@@ -1,6 +1,5 @@
 import authService from './authService'
-import store from '../store'
-import { showToast } from '../slices/toastSlice'
+// import store from '../store'
 
 const API_URL = import.meta.env.VITE_API_URL
 
@@ -44,8 +43,8 @@ const makeApiRequest = async (url, options = {}) => {
 
         return await response.json()
     } catch (error) {
-        store.dispatch(showToast(error.message))
-        throw error
+        // store.dispatch(showToast(error.message))
+        // throw error
     }
 }
 
