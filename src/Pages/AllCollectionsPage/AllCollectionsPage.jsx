@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useState, useEffect } from 'react'
 import { fetchCollections } from '../../API/collectionAPISlice'
 
+
 function AllCollectionsPage() {
     const dispatch = useDispatch()
     const collections = useSelector((state) => state.collections.items)

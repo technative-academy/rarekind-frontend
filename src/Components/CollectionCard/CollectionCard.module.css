@@ -1,3 +1,8 @@
+link {
+    width: 100%;
+}
+
+
 .card {
     border: 2px solid var(--color-background-feature);
     border-radius: var(--border-radius-s);
@@ -5,12 +10,18 @@
     height: 200px;
     background-color: var(--color-background-feature);
     padding: 1.5em;
+    
 }
+
 
 .cardHeader {
     padding: 0 0 0.5em;
     font-weight: 400;
+    text-decoration: none;
+    color: var(--color-text-light-gray);
 }
+
+
 
 .cardTag {
     font-size: var(--font-size-small);
@@ -24,9 +35,12 @@
 
 .cardDetails {
     font-size: var(--font-size-small);
+    color: var(--color-text-light-gray);
     padding: 1em 0 0;
+    text-decoration: none;
 }
 
 .cardStatusTitle {
     color: var(--color-text-dark-gray);
+    text-decoration: none;
 }
