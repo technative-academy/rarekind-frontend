@@ -31,6 +31,10 @@ const routes = [
         path: "oneofmycollections",
         element: <OneOfMyCollections />,
       },
+      {
+        path: "collection/:id",
+        element: <OneOfMyCollections />,
+      }
     ],
   },
 ];
