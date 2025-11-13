@@ -4,6 +4,7 @@ import CollectionSearch from '../../Components/CollectionSearch/CollectionSearch
 import { useDispatch, useSelector } from 'react-redux'
 import { useState, useEffect } from 'react'
 import { fetchCollections } from '../../API/collectionAPISlice'
+import Loading from '../../Components/Loading/Loading'
 
 export default function MyCollectionsPage() {
     const dispatch = useDispatch()
@@ -21,6 +22,7 @@ export default function MyCollectionsPage() {
         <section className={styles.wrapper}>
             <p>All Collections</p>
             <CollectionSearch />
+            {status === 'loading' && <Loading />}
             <div className={styles.grid}>
                 {collections.map((collection) => (
                     <CollectionCard
