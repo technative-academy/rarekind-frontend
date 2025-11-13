@@ -1,7 +1,7 @@
 import styles from './DarkMode.module.css'
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { toggleDarkMode } from './darkModeSlice'
+import { toggleDarkMode } from '../../Slices/darkModeSlice'
 
 function DarkMode() {
     const dispatch = useDispatch()

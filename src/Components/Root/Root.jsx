@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import SiteNav from '../SiteNav/SiteNav'
 import MainContent from '../MainContent/MainContent'
+import Toast from '../Toast/Toast'
 
 function Root() {
     return (
@@ -11,6 +12,7 @@ function Root() {
             <SiteNav />
             <MainContent />
             <Footer />
+            <Toast />
         </div>
     )
 }

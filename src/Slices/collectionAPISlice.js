@@ -1,15 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import makeApiRequest from '../services/apiService'
 
 export const fetchCollections = createAsyncThunk(
     'collections/fetchCollections',
     async () => {
-        const URL =
-            'https://rarekind-backend-production.up.railway.app/collections'
-        const response = await fetch(URL) 
-            
-        
-        console.log(response)
-        return response.json()
+        const data = await makeApiRequest('collections')
+        return data
     }
 )
 
