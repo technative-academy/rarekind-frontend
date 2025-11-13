@@ -3,8 +3,8 @@ import CollectionCard from '../../Components/CollectionCard/CollectionCard'
 import CollectionSearch from '../../Components/CollectionSearch/CollectionSearch'
 import CollectionFilter from '../../Components/CollectionFilter/CollectionFilter'
 import { useDispatch, useSelector } from 'react-redux'
-import { useState, useEffect } from 'react'
-import { fetchCollections } from '../../API/collectionAPISlice'
+import { useEffect } from 'react'
+import { fetchCollections } from '../../Slices/collectionAPISlice'
 
 function AllCollectionsPage() {
     const dispatch = useDispatch()
