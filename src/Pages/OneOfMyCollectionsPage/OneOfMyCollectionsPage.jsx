@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { fetchItemsByCollectionId } from '../../API/itemAPISlice'
+import Loading from '../../Components/Loading/Loading'
 
 function OneOfMyCollectionsPage() {
     const selectedToggle = useSelector((state) => state.toggle.selectedToggle)
@@ -18,19 +19,10 @@ function OneOfMyCollectionsPage() {
     const { id } = useParams()
 
     useEffect(() => {
-        if (id && status === 'idle') {
+        if (id) {
             dispatch(fetchItemsByCollectionId(id))
         }
-    }, [dispatch, id, status])
-
-    useEffect(() => {
-        console.log('[OneOfMyCollectionsPage] Current state:', {
-            status,
-            itemsCount: items?.length,
-            items,
-            error
-        })
-    }, [items, status, error])
+    }, [dispatch, id])
 
     return (
         <>
@@ -40,7 +32,7 @@ function OneOfMyCollectionsPage() {
                 </section>
             )}
             <ToggleButton />
-
+            {status === 'loading' && <Loading />}
             <section className={styles.itemContainer}>
                 {/* <AddItems /> */}
                 <div className={styles.grid}>
