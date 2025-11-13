@@ -1,14 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit'
 import popupReducer from '../Components/PopUp/popupSlice'
-import darkModeReducer from '../Components/DarkMode/darkModeSlice'
-import collectionAPISlice from '../API/collectionAPISlice'
+import darkModeReducer from '../Slices/darkModeSlice'
+import collectionsReducer from '../Slices/collectionAPISlice'
 import authReducer from '../Slices/authSlice'
+import toastReducer from '../Slices/toastSlice'
 
 export const store = configureStore({
     reducer: {
         popup: popupReducer,
         darkmode: darkModeReducer,
-        collections: collectionAPISlice,
+        collections: collectionsReducer,
         auth: authReducer,
+        toast: toastReducer,
     },
 })
