@@ -1,0 +1,14 @@
+/* Show Button */
+
+.showButton {
+    background: transparent;
+    border: none;
+    color: var(--color-primary);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+}
+
+.showButton:hover {
+    transform: scale(1.05);
+}

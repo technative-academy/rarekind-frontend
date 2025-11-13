@@ -4,6 +4,9 @@ import darkModeReducer from '../Slices/darkModeSlice'
 import collectionsReducer from '../Slices/collectionAPISlice'
 import authReducer from '../Slices/authSlice'
 import toastReducer from '../Slices/toastSlice'
+import darkModeReducer from '../Components/DarkMode/darkModeSlice'
+import toggleReducer from '../Slices/toggleContentSlice'
+import collectionAPISlice from '../API/collectionAPISlice'
 
 export const store = configureStore({
     reducer: {
@@ -12,5 +15,7 @@ export const store = configureStore({
         collections: collectionsReducer,
         auth: authReducer,
         toast: toastReducer,
+        toggle: toggleReducer,
+        collections: collectionAPISlice,
     },
 })

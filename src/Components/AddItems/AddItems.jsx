@@ -4,7 +4,7 @@ import styles from './AddItems.module.css'
 
 import { FaInbox, FaPlus } from 'react-icons/fa6'
 
-export default function Items() {
+export default function AddItems() {
     const dispatch = useDispatch()
 
     return (

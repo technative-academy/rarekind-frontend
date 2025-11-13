@@ -2,6 +2,8 @@ import styles from './CollectionDetails.module.css'
 import { FaPencil, FaTrashCan } from 'react-icons/fa6'
 
 export default function CollectionDetails() {
+    const collectionTitle = 'Title of Collection'
+
     return (
         <div className={styles.collectionContainer}>
             <h2 className={styles.pageTitle}>Title of Collection </h2>
