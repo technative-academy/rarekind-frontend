@@ -8,12 +8,15 @@ function SiteNav() {
     const location = useLocation()
 
     const navLinks = [
-        // { label: 'Dashboard', url: '/' },
-        { label: 'All collections', url: '/allcollections' },
+        { label: 'All collections', url: '/' },
         { label: 'My collections', url: '/mycollections' },
         { label: 'Users', url: '/users' },
         { label: 'One of my collections', url: '/oneofmycollections' },
     ]
+
+    const isAllCollections =
+        location.pathname === '/' || location.pathname === '/allcollections'
+
     return (
         <div className={styles.wrapper}>
             <nav className={styles.links}>
@@ -22,22 +25,27 @@ function SiteNav() {
                         key={navLink.url}
                         to={navLink.url}
                         className={({ isActive }) =>
-                            isActive ? styles.activeLink : styles.inactiveLink
+                            navLink.url === '/'
+                                ? isAllCollections
+                                    ? styles.activeLink
+                                    : styles.inactiveLink
+                                : isActive
+                                ? styles.activeLink
+                                : styles.inactiveLink
                         }
                     >
                         {navLink.label}
                     </NavLink>
                 ))}
             </nav>
-            {(location.pathname === '/allcollections' || location.pathname === '/mycollections') && (
-                
+            {(location.pathname === '/allcollections' ||
+                location.pathname === '/mycollections') && (
                 <button
                     className={styles.newCollectionButton}
                     onClick={() => dispatch(openPopup('newcollection'))}
                 >
                     + NEW COLLECTION
                 </button>
-                
             )}
         </div>
     )

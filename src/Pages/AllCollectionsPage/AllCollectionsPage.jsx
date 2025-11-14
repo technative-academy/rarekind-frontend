@@ -21,7 +21,6 @@ function AllCollectionsPage() {
 
     return (
         <section className={styles.wrapper}>
-            <p>All Collections</p>
             <div className={styles.inputContainer}>
                 <CollectionSearch />
                 <CollectionFilter />
