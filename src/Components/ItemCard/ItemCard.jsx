@@ -1,5 +1,7 @@
 import styles from './ItemCard.module.css'
 
+
+
 export default function ItemCard({ item }) {
     return (
         <div className={styles.card}>

@@ -12,7 +12,7 @@ export default function CollectionCard({ collection }) {
             </p>
             <p className={styles.cardDetails}>
                 <span className={styles.cardStatusTitle}>Last updated:</span>{' '}
-                <time dateTime="14:00"> {collection.date_updated}</time>
+                <time> {collection.date_updated}</time>
             </p>
         </Link>
     )
