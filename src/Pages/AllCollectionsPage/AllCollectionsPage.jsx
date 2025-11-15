@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 import { fetchCollections } from '../../Slices/collectionAPISlice'
 import Loading from '../../Components/Loading/Loading'
 
+
 function AllCollectionsPage() {
     const dispatch = useDispatch()
     const collections = useSelector((state) => state.collections.items)
