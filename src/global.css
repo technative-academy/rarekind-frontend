@@ -42,7 +42,7 @@ html.light-mode {
     --color-background-feature: #c1dbfb;
      --color-loading-spinner-secondary: rgba(0, 132, 255, 0.9);
     --color-loading-spinner-tertiary: rgba(255, 24, 24, 0.8);
-    --color-loading-spinner-quaternary: rgba(26, 26, 26, 0.7);
+    --color-loading-spinner-quaternary: rgba(125, 125, 125, 0.7);
     --color-loading-spinner-quinary:  rgba(7, 205, 255, 0.6);
     --color-loading-spinner-senary: rgba(255, 17, 0, 0.5);
 }
