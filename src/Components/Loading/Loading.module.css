@@ -19,7 +19,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    background-color: #01e417;
+    background-color: var(--color-loading-spinner);
     border-radius: 50%;
     animation: spinner-4t3wzl 2s infinite linear;
 }
@@ -27,31 +27,31 @@
 .spinner div:nth-child(1) {
     left: 0;
     animation-delay: 0.15s;
-    background-color: rgba(251, 255, 0, 0.9);
+    background-color: var(--color-loading-spinner-secondary);
 }
 
 .spinner div:nth-child(2) {
     left: 25%;
     animation-delay: 0.3s;
-    background-color: rgba(255, 24, 24, 0.8);
+    background-color: var(--color-loading-spinner-tertiary);
 }
 
 .spinner div:nth-child(3) {
     left: 50%;
     animation-delay: 0.45s;
-    background-color: rgba(54, 255, 4, 0.7);
+    background-color: var(--color-loading-spinner-quaternary);
 }
 
 .spinner div:nth-child(4) {
     left: 75%;
     animation-delay: 0.6s;
-    background-color: rgba(255, 251, 7, 0.6);
+    background-color: var(--color-loading-spinner-quinary);
 }
 
 .spinner div:nth-child(5) {
     left: 100%;
     animation-delay: 0.75s;
-    background-color: rgba(255, 17, 0, 0.5);
+    background-color: var(--color-loading-spinner-senary);
 }
 
 

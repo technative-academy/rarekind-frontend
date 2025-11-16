@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom'
 import { fetchItemsByCollectionId } from '../../Slices/itemAPISlice'
 import Loading from '../../Components/Loading/Loading'
 
-function OneOfMyCollectionsPage() {
+function OneOfMyCollectionsPage({ collection }) {
     const selectedToggle = useSelector((state) => state.toggle.selectedToggle)
     const dispatch = useDispatch()
     const items = useSelector((state) => state.items.items)
@@ -28,15 +28,20 @@ function OneOfMyCollectionsPage() {
         <>
             {!selectedToggle && (
                 <section className={styles.wrapper}>
-                    <CollectionDetails />
+                    {collection ? (
+                        <CollectionDetails collection={collection} />
+                    ) : (
+                        <Loading />
+                    )}
                 </section>
             )}
+
             <ToggleButton />
             {status === 'loading' && <Loading />}
             <section className={styles.itemContainer}>
                 {/* <AddItems /> */}
                 <div className={styles.grid}>
-            {items.map((item) => (
+                    {items.map((item) => (
                         <ItemCard key={item.id} item={item} />
                     ))}
                 </div>

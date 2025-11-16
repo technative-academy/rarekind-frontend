@@ -27,6 +27,8 @@
     justify-items: center;
     margin: 1.5em 0 0;
 }
+
+
 @media (min-width: 886px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
